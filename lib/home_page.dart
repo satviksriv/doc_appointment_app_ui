@@ -1,4 +1,5 @@
 import 'package:doc_appointment_app_ui/color_scheme.dart';
+import 'package:doc_appointment_app_ui/doc_info_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,6 +13,9 @@ class HomePage extends StatelessWidget {
         fontFamily: "avenir",
       ),
       home: MyFirstPage(),
+      routes: {
+        "/DocInfoPage": (context) => DocInfoPage(),
+      },
     );
   }
 }
